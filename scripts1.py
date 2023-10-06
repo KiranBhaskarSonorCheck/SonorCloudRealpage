@@ -20,7 +20,7 @@ def trigger_workflow(work_flowname,parameter1,parameter2)
       data = {
         "event_type": work_flowname,
         "client_payload": {
-          'parameter1': parameter1,
+          'parameter1': parameter3,
           'parameter2': parameter2
         }
       }
