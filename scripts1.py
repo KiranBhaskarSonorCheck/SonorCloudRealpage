@@ -1,6 +1,5 @@
 import os
 import requests
-import sys
 
 TOKEN= str(sys.argv[1])
 OWNER= str(sys.argv[2])
@@ -20,7 +19,7 @@ def trigger_workflow(work_flowname,parameter1,parameter2)
       data = {
         "event_type": work_flowname,
         "client_payload": {
-          'parameter1': parameter3,
+          'parameter1': parameter1,
           'parameter2': parameter2
         }
       }
